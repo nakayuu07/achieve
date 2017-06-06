@@ -10,6 +10,10 @@
       <div class="field">
         <%= f.email_field :email, autofocus: true, class: "form-control", placeholder: "メールアドレス" %>
       </div>
+      
+      <div class="field">
+       <%= f.text_field :name, class: "form-control", placeholder: "名前" %>
+      </div>
 
       <div class="field">
         <%= f.password_field :password, autocomplete: "off", class: "form-control", placeholder: "パスワード" %>
@@ -21,29 +25,6 @@
 
       <div class="actions">
         <%= f.submit "サインアップ", class: "btn btn-primary btn-block" %>
-      </div>
-      
-      
-      <div class="field">
-       <%= f.email_field :email, autofocus: true, class: "form-control", placeholder: "メールアドレス" %>
-      </div>
-      
-      <div class="field">
-       <%= f.text_field :name, class: "form-control", placeholder: "名前" %>
-      </div>
-
-      <div class="field">
-       <%= f.password_field :password, autocomplete: "off", class: "form-control", placeholder: "パスワード" %>
-      </div>
-      
-      <div class="field">
-       <%= f.label :メールアドレス %><br />
-       <%= f.email_field :email, autofocus: true, class: "form-control" %>
-      </div>
-
-      <div class="field">
-       <%= f.label :名前 %><br />
-       <%= f.text_field :name, class: "form-control" %>
       </div>
 
       <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
