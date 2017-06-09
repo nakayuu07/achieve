@@ -5,8 +5,8 @@ class NoticeMailer < ApplicationMailer
   #
   #   en.notice_mailer.sendmail_blog.subject
   #
-  def sendmail_blog(aaa)
-    @mail = aaa
+  def sendmail_blog(blog)
+    @blog = blog
 
 
     mail to: "nakayuu07@gmail.com",
@@ -17,6 +17,6 @@ class NoticeMailer < ApplicationMailer
       @contact = contact
 
        mail to: "contact.email",
-      subject: '【Achieve】お問い合わせが完了しました'
+         subject: '【Achieve】お問い合わせが完了しました'
   end
 end
