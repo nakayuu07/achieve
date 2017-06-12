@@ -82,7 +82,7 @@ config.action_mailer.default_url_options = { host: 'https://serene-meadow-67233.
   ActionMailer::Base.smtp_settings =
   {
    user_name: ENV['app69481498@heroku.com'],
-   password: ENV['S f9jkk4hl5690'],
+   password: ENV['f9jkk4hl5690'],
    domain: "heroku.com",
    address: "smtp.sendgrid.net",
    port: 587,
