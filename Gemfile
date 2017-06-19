@@ -29,6 +29,9 @@ gem 'rails_admin'
 
 gem 'cancan'
 
+gem 'carrierwave'
+gem 'mini_magick'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -61,3 +64,6 @@ group :development do
 end
 
 gem 'activeresource'
+gem 'omniauth'
+gem 'omniauth-twitter'
+gem 'omniauth-facebook'
