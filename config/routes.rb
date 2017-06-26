@@ -5,14 +5,15 @@ Rails.application.routes.draw do
   devise_for :users, controllers: {
     registrations: "users/registrations",
     omniauth_callbacks: "users/omniauth_callbacks"
-  }
+}
 
 
-    resources :blogs, only: [:index,:new,:create,:edit,:update,:destroy] do
-      collection do
-       post :confirm
+
+      resources :blogs do
+        resources :comments
+        post :confirm, on: :collection
       end
-    end
+
 
   resources :contacts, only:[:new,:create] do
     collection do
