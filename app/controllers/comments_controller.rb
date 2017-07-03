@@ -3,6 +3,8 @@ class CommentsController < ApplicationController
       # Blogをパラメータの値から探し出し,Blogに紐づくcommentsとしてbuildします。
       @comment = current_user.comments.build(comment_params)
       @blog = @comment.blog
+        binding.pry
+
 
       # クライアント要求に応じてフォーマットを変更
         respond_to do |format|
