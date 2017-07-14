@@ -80,7 +80,7 @@ Rails.application.configure do
   name = ENV['SENDGRID_USERNAME']
   mail = ENV['SENDGRID_PASSWORD']
 
-config.action_mailer.default_url_options = { host: 'serene-meadow-67233.herokuapp.com' }
+config.action_mailer.default_url_options = { host: 'http://13.114.63.26/' }
   ActionMailer::Base.delivery_method = :smtp
   ActionMailer::Base.smtp_settings =
   {
