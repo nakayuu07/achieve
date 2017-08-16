@@ -84,8 +84,8 @@ config.action_mailer.default_url_options = { host: '13.114.63.26' }
   ActionMailer::Base.delivery_method = :smtp
   ActionMailer::Base.smtp_settings =
   {
-   user_name: name,
-   password: mail,
+    user_name: name,
+  password: mail,
    domain: "heroku.com",
    address: "smtp.sendgrid.net",
    port: 587,
